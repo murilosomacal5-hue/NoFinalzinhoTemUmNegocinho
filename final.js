@@ -3,8 +3,6 @@ const tarefas = []
 const form = document.getElementById("tarefa");
 const input = document.getElementByI("InputTarefa");
 
-const lista = document.createElement("ul");
-
 let id = 1;
 
 form.addEventListener("submit", function(event) {
@@ -35,6 +33,8 @@ form.addEventListener("submit", function(event) {
 });
 
 function mostrartTarefas() {
+
+    lista.innerHTML = " ";
 
     for (let i = 0; i < tarefas.length; i++) {
 
