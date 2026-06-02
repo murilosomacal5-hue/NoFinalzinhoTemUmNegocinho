@@ -1,10 +1,10 @@
 const tarefas = [];
 
-const form = document.querySelector("#Tarefa");
-const inputTarefa = document.querySelector("#InputTarefa");
-const inputDescricao = document.querySelector("#InputDescricao");
-const inputData = document.querySelector("#InputData");
-const lista = document.querySelector("#lista");
+const form = document.getElementById("Tarefa");
+const inputTarefa = document.getElementById("InputTarefa");
+const inputDescricao = document.getElementById("InputDescricao");
+const inputData = document.getElementById("InputData");
+const lista = document.getElementById("lista");
 
 let id = 1;
 
@@ -129,7 +129,8 @@ function remover(id) {
 
         if (tarefas[i].id == id) {
 
-            tarefas.splice(i, 1);
+            tarefas.splice(i, 1)
+            ;
 
             break;
         }
